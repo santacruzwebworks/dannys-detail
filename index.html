@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Danny's Detail | Mobile Auto Detailing in Watsonville, CA</title>
+<meta name="description" content="Mobile auto detailing in Watsonville, CA. Hand washes, interior cleans and full details done in your driveway. Wrapped cars welcome. Rated 5.0 on Google. Call (831) 359-8110.">
+<meta property="og:title" content="Danny's Detail | Mobile Auto Detailing, Watsonville">
+<meta property="og:description" content="We come to you. Rated 5.0 on Google. Call (831) 359-8110.">
+<meta name="theme-color" content="#121416">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  ================================================================
+  HOW TO EDIT THIS SITE (search this file for these words)
+  ----------------------------------------------------------------
+  PRICES:   search for  [$PRICE]  and replace each with a real price,
+            e.g.  From $60
+  PHOTOS:   search for  PHOTO SLOT . Replace the whole <div class="photo">
+            with:  <img class="photo-img" src="photo-name.jpg" alt="Describe the photo">
+            and upload the photo file to the same GitHub repo.
+  COLOR:    change  --accent  below (options: #FF7A1A orange,
+            #F5B820 yellow, #3DB8F5 blue, #E5484D red)
+  PHONE:    search for  8313598110  and  359-8110  if it ever changes
+  ================================================================
+-->
+
+<style>
+:root{
+  --accent:#FF7A1A;
+  --bg:#121416;
+  --panel:#181B1E;
+  --card:#1F2226;
+  --text:#F2F0EB;
+  --muted:#B4B8BE;
+  --line:#2C3036;
+  --display:'Barlow Condensed','Arial Narrow',Arial,sans-serif;
+  --body:Barlow,'Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;display:block}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.display{font-family:var(--display);text-transform:uppercase;margin:0;line-height:.95}
+.kicker{font-size:14px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:10;background:rgba(18,20,22,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:1px;text-transform:uppercase;color:var(--text);text-decoration:none}
+.logo span{color:var(--accent)}
+.header-call{display:flex;align-items:center;gap:10px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:600;font-size:17px;border-radius:6px;height:48px;padding:0 16px}
+.header-call .num{display:none}
+.nav{display:none}
+
+/* Buttons */
+.btn{display:flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:6px;font-family:var(--body);font-weight:600;font-size:18px;text-decoration:none;cursor:pointer}
+.btn-primary{background:var(--accent);color:var(--bg);border:none}
+.btn-ghost{border:1px solid #4A4F57;color:var(--text);background:transparent}
+
+/* Photo placeholders */
+.photo{border-radius:10px;border:2px dashed #3A3F46;background:#1C1F23;display:flex;align-items:center;justify-content:center;text-align:center;color:#8A8F96;font-size:15px;padding:20px}
+.photo-img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+
+/* Hero */
+.hero{padding:36px 0 48px}
+.hero .wrap{display:grid;gap:28px}
+.hero-photo{min-height:240px}
+.hero-copy{display:flex;flex-direction:column;gap:20px}
+.hero h1{font-size:clamp(48px,11vw,84px);font-weight:800}
+.hero p{margin:0;font-size:18px;color:var(--muted);max-width:34em}
+.hero-actions{display:flex;flex-direction:column;gap:12px}
+.rating{display:flex;align-items:center;gap:8px;font-size:16px;color:var(--muted)}
+.stars{color:#F5B820;letter-spacing:2px}
+
+/* Sections */
+section{padding:56px 0}
+.alt{background:var(--panel)}
+.section-head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+h2.display{font-size:clamp(38px,7vw,56px);font-weight:700}
+
+/* Services */
+.services{display:grid;gap:14px}
+.service{display:flex;flex-direction:column;gap:10px;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.service.featured{border:2px solid var(--accent)}
+.badge{align-self:flex-start;font-size:13px;font-weight:600;background:var(--accent);color:var(--bg);padding:4px 10px;border-radius:4px}
+.service-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.service h3{font-family:var(--display);font-weight:700;font-size:26px;text-transform:uppercase;margin:0;line-height:1}
+.price{font-size:18px;font-weight:600;color:var(--accent);white-space:nowrap}
+.service p{margin:0;font-size:16px;color:var(--muted)}
+.wrap-note{margin-top:20px;padding:20px 24px;border-left:4px solid var(--accent);background:var(--card);border-radius:0 10px 10px 0}
+.wrap-note strong{display:block;font-size:18px;margin-bottom:4px}
+.wrap-note p{margin:0;color:var(--muted);font-size:16px}
+
+/* Steps (a real sequence, so numbered) */
+.steps{display:grid;gap:28px;list-style:none;margin:0;padding:0}
+.step{display:flex;gap:16px}
+.step-num{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;color:var(--accent);min-width:52px}
+.step h3{margin:0 0 4px;font-size:20px;font-weight:600}
+.step p{margin:0;color:var(--muted);font-size:16px}
+
+/* Before & after */
+.gallery{display:grid;gap:14px}
+.gallery .photo{min-height:220px}
+
+/* Reviews */
+.reviews{display:grid;gap:14px}
+.review{margin:0;display:flex;flex-direction:column;gap:14px;padding:26px;background:#1C1F23;border-radius:10px}
+.review blockquote{margin:0;font-size:18px;line-height:1.55}
+.review figcaption{font-size:15px;font-weight:600;color:var(--muted)}
+.reviews-link{margin-top:20px;font-weight:600}
+
+/* Booking */
+.booking{display:grid;gap:40px}
+.form{display:flex;flex-direction:column;gap:18px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-size:16px;font-weight:600}
+.field input,.field select{height:54px;padding:0 14px;font-family:var(--body);font-size:17px;background:var(--bg);color:var(--text);border:1px solid #3A3F46;border-radius:6px;width:100%}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23B4B8BE' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+.form-note{font-size:15px;color:var(--muted);margin:0}
+.form-error{color:#FF8A80;font-size:15px;margin:0;min-height:1em}
+.info{display:flex;flex-direction:column;gap:22px}
+.info-block h3{margin:0 0 6px;font-size:18px;font-weight:600}
+.info-block p{margin:0;color:var(--muted)}
+.hours{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 18px;color:var(--muted)}
+.hours dt{color:var(--text);font-weight:500}
+.hours dd{margin:0}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:28px 0 32px;font-size:15px;color:var(--muted)}
+footer .wrap{display:flex;flex-direction:column;gap:6px}
+footer a{color:var(--muted)}
+
+/* Wider screens */
+@media (min-width:640px){
+  .hero-actions{flex-direction:row}
+  .services,.gallery,.reviews{grid-template-columns:1fr 1fr}
+}
+@media (min-width:900px){
+  .header-call .num{display:inline}
+  .nav{display:flex;gap:28px}
+  .nav a{color:var(--muted);text-decoration:none;font-weight:500}
+  .nav a:hover{color:var(--text)}
+  .hero{padding:64px 0 80px}
+  .hero .wrap{grid-template-columns:1.05fr 1fr;align-items:center;gap:56px}
+  .hero-photo{order:2;min-height:480px}
+  section{padding:88px 0}
+  .services{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .booking{grid-template-columns:1.2fr 1fr;gap:64px;align-items:start}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="#top">Danny's <span>Detail</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book">Book</a>
+    </nav>
+    <a class="header-call" href="tel:+18313598110" aria-label="Call Danny's Detail at (831) 359-8110">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>Call</span><span class="num">&nbsp;(831) 359-8110</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <!-- PHOTO SLOT: hero (his best-looking finished car, ideally with the van) -->
+      <div class="photo hero-photo">Hero photo: best-looking finished car</div>
+      <div class="hero-copy">
+        <div class="kicker">Mobile auto detailing in Watsonville</div>
+        <h1 class="display">Showroom shine without the dealership price.</h1>
+        <p>Hand washes, deep interior cleans and full details for your car, truck or SUV, done right in your driveway. Wrapped cars welcome.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">Book a detail</a>
+          <a class="btn btn-ghost" href="tel:+18313598110">Call (831) 359-8110</a>
+        </div>
+        <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span>5.0 on Google from 46 reviews. Open 7 days.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display">Pick your level of clean</h2>
+      </div>
+      <div class="services">
+        <article class="service">
+          <div class="service-top"><h3>Express wash</h3><div class="price">[$PRICE]</div></div>
+          <p>Hand wash, wheels and tires, windows, quick vacuum.</p>
+        </article>
+        <article class="service">
+          <div class="service-top"><h3>Interior detail</h3><div class="price">[$PRICE]</div></div>
+          <p>Shampoo seats and carpets, wipe down every surface, clean vents and door jambs.</p>
+        </article>
+        <article class="service featured">
+          <div class="badge">Most booked</div>
+          <div class="service-top"><h3>Full detail</h3><div class="price">[$PRICE]</div></div>
+          <p>Everything inside and out, plus clay bar and a hand-applied wax.</p>
+        </article>
+        <article class="service">
+          <div class="service-top"><h3>Paint &amp; ceramic</h3><div class="price">[$PRICE]</div></div>
+          <p>Swirl removal and a ceramic coating that keeps the shine for years.</p>
+        </article>
+      </div>
+      <div class="wrap-note">
+        <strong>Got a wrapped car?</strong>
+        <p>Wraps need gentler products and a different technique than paint. Ask about wrapped vehicle care when you book.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display">We come to you</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><div class="step-num" aria-hidden="true">1</div><div><h3>Book online or call</h3><p>Tell us your vehicle and the service you want.</p></div></li>
+        <li class="step"><div class="step-num" aria-hidden="true">2</div><div><h3>We show up ready</h3><p>A fully equipped van brings the water, vacuums and supplies to your home or work.</p></div></li>
+        <li class="step"><div class="step-num" aria-hidden="true">3</div><div><h3>Drive away clean</h3><p>Pay when it's done and you're happy with it.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER -->
+  <section class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display">Before &amp; after</h2>
+      </div>
+      <div class="gallery">
+        <!-- PHOTO SLOT: before/after interior -->
+        <div class="photo">Before and after photo: dirty interior</div>
+        <!-- PHOTO SLOT: before/after paint -->
+        <div class="photo">Before and after photo: paint correction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display">What customers say</h2>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <blockquote>"As a mom of two children, Danny left my seats looking like new again. Hard-to-reach spots were perfectly clean, including my son's booster seat."</blockquote>
+          <figcaption>Google review</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>"Danny just detailed my BMW X5 SUV. He spent a LOT of time on my vehicle and it literally looks brand new! He did the work in my driveway."</blockquote>
+          <figcaption>Google review</figcaption>
+        </figure>
+      </div>
+      <p class="reviews-link"><a href="https://www.google.com/maps/search/?api=1&query=Danny%27s+Detail+412+Airport+Blvd+Watsonville+CA" target="_blank" rel="noopener">Read all 46 reviews on Google</a></p>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book" class="alt">
+    <div class="wrap booking">
+      <div>
+        <div class="section-head">
+          <h2 class="display">Book your detail</h2>
+          <p class="muted" style="margin:0">Fill this in and tap the button. It opens a text to Danny with your details filled in, so you just hit send.</p>
+        </div>
+        <form class="form" id="booking-form" novalidate>
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone number</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="f-vehicle">Vehicle (year, make, model)</label><input id="f-vehicle" name="vehicle" type="text" placeholder="e.g. 2019 Toyota Tacoma"></div>
+          <div class="field"><label for="f-service">Service</label>
+            <select id="f-service" name="service">
+              <option>Express wash</option>
+              <option>Interior detail</option>
+              <option selected>Full detail</option>
+              <option>Paint &amp; ceramic</option>
+              <option>Wrapped vehicle care</option>
+              <option>Not sure, give me a quote</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-day">Preferred day</label><input id="f-day" name="day" type="text" placeholder="e.g. Saturday morning"></div>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Text my booking to Danny</button>
+          <p class="form-note">On a computer? Call or text <a href="tel:+18313598110">(831) 359-8110</a> instead.</p>
+        </form>
+      </div>
+
+      <div class="info">
+        <div class="info-block">
+          <h3>Call or text</h3>
+          <p><a href="tel:+18313598110">(831) 359-8110</a></p>
+        </div>
+        <div class="info-block">
+          <h3>Based in Watsonville</h3>
+          <p>412 Airport Blvd, Watsonville, CA 95076<br>Mobile service, so we come to you.</p>
+        </div>
+        <div class="info-block">
+          <h3>Hours</h3>
+          <dl class="hours">
+            <dt>Mon to Fri</dt><dd>9am to 5pm</dd>
+            <dt>Sat and Sun</dt><dd>9am to 6:30pm</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="year">2026</span> Danny's Detail, Watsonville, CA</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+document.getElementById('booking-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var get = function (id) { return document.getElementById(id).value.trim(); };
+  var name = get('f-name'), phone = get('f-phone');
+  var err = document.getElementById('form-error');
+  if (!name || !phone) {
+    err.textContent = 'Add your name and phone number so Danny can reach you.';
+    (!name ? document.getElementById('f-name') : document.getElementById('f-phone')).focus();
+    return;
+  }
+  err.textContent = '';
+  var lines = [
+    "Hi Danny, I'd like to book a detail.",
+    'Name: ' + name,
+    'Phone: ' + phone
+  ];
+  if (get('f-vehicle')) lines.push('Vehicle: ' + get('f-vehicle'));
+  lines.push('Service: ' + get('f-service'));
+  if (get('f-day')) lines.push('Preferred day: ' + get('f-day'));
+  // "?&body=" works on both iPhone and Android
+  window.location.href = 'sms:+18313598110?&body=' + encodeURIComponent(lines.join('\n'));
+});
+</script>
+</body>
+</html>
